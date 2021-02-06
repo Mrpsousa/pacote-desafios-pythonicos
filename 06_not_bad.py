@@ -10,6 +10,9 @@ Exemplo: 'The dinner is not that bad!' retorna 'The dinner is good!'
 """
 
 def not_bad(s):
+    if s.find('not'):
+        if s.find('bad'):
+            ....
     # +++ SUA SOLUÇÃO +++
     return
 

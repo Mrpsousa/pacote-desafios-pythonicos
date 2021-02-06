@@ -10,7 +10,10 @@ Irá retornar: [1, 2, 3]
 
 def remove_adjacent(nums):
     # +++ SUA SOLUÇÃO +++
-    return
+    for idx, n in enumerate(nums):
+        if nums[idx -1] == nums[idx]:
+            nums.pop(idx)
+    return nums
 
 
 # --- Daqui para baixo são apenas códigos auxiliáries de teste. ---

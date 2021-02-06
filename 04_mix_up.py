@@ -14,7 +14,10 @@ Assuma que a e b tem tamanho 2 ou maior.
 
 def mix_up(a, b):
     # +++ SUA SOLUÇÃO +++
-    return
+    slic_a = a[:2]
+    slic_b = b[:2]
+
+    return f"{slic_b}{a[2:]} {slic_a}{b[2:]}"
 
 
 # --- Daqui para baixo são apenas códigos auxiliáries de teste. ---

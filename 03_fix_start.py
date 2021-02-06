@@ -15,9 +15,11 @@ onde todas as instancias de stra foram substituidas por strb.
 
 def fix_start(s):
     # +++ SUA SOLUÇÃO +++
-    return
-
-
+    aux = s[:1]
+    word = s[1:]
+    new_word = word.replace(aux, '*')
+    return f'{aux}{new_word}'
+    
 # --- Daqui para baixo são apenas códigos auxiliáries de teste. ---
 
 def test(f, in_, expected):
